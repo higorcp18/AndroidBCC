@@ -1,6 +1,7 @@
 package com.ucb.higorcp18.aulaandroid;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -12,6 +13,7 @@ public class MainActivity extends Activity implements View.OnClickListener{
     Button btnAlou;
     EditText edtAlcool;
     EditText edtGasolina;
+    Intent intent;
 
 
     @Override
@@ -39,7 +41,9 @@ public class MainActivity extends Activity implements View.OnClickListener{
 
         switch (view.getId()) {
             case R.id.btnAlou:
-                Toast.makeText(this, "Btn Alou", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(this, "Btn Alou", Toast.LENGTH_SHORT).show();
+                intent = new Intent(this,SegundaActivity.class);
+                startActivity(intent);
                 break;
             case R.id.btnHello:
                 Toast.makeText(this, "Btn Hello", Toast.LENGTH_SHORT).show();

@@ -9,46 +9,35 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 public class MainActivity extends Activity implements View.OnClickListener{
-    Button btnHelloWorld;
-    Button btnAlou;
-    EditText edtAlcool;
-    EditText edtGasolina;
+    Button btnCombustivel;
+    Button btnAutonomia;
     Intent intent;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        btnHelloWorld = findViewById(R.id.btnHello);
-        btnAlou = findViewById(R.id.btnAlou);
-        btnHelloWorld.setOnClickListener(this);
-        btnAlou.setOnClickListener(this);
+        btnAutonomia = findViewById(R.id.btnCombustivel);
+        btnCombustivel = findViewById(R.id.btnAutonomia);
+
+        btnAutonomia.setOnClickListener(this);
+        btnCombustivel.setOnClickListener(this);
+
     }
+
     @Override
     public void onClick(View view){
-//        edtAlcool = findViewById(R.id.edtAlcool);
-//        edtGasolina = findViewById(R.id.edtGasolina);
-//        Double precoAlcool = Double.parseDouble(edtAlcool.getText().toString());
-//        Double precoGasolina = Double.parseDouble(edtGasolina.getText().toString());
-//
-//        if( precoAlcool/precoGasolina < 0.7)
-//            Toast.makeText(this, "Gasolina é melhor!", Toast.LENGTH_SHORT).show();
-//        else{
-//            Toast.makeText(this, "Alcool é melhor!", Toast.LENGTH_SHORT).show();
-//        }
 
         switch (view.getId()) {
-            case R.id.btnAlou:
-                //Toast.makeText(this, "Btn Alou", Toast.LENGTH_SHORT).show();
+            case R.id.btnAutonomia:
                 intent = new Intent(this,SegundaActivity.class);
                 startActivity(intent);
                 break;
-            case R.id.btnHello:
-                Toast.makeText(this, "Btn Hello", Toast.LENGTH_SHORT).show();
+            case R.id.btnCombustivel:
+                intent = new Intent(this, TerceiraActivity.class);
+                startActivity(intent);
                 break;
         }
-
     }
 }

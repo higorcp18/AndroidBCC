@@ -1,4 +1,11 @@
 <resources>
-    <string name="app_name">AgoraVai</string>
-    <string name="btnHello">Clique Aqui!</string>
+    <string name="app_name">Calculator</string>
+    <string name="btnCalular">Calcular</string>
+    <string name="edtQtdCombustivel">Digite a quantidade de combustível!</string>
+    <string name="edtQtdKm">Digite a quantidade de KM!</string>
+    <string name="edtPrecoGasolina">Digite aqui o preço da Gasolina!</string>
+    <string name="edtPrecoAlcool">Digite aqui o preço do Alcool!</string>
+    <string name="btnCombustivel">Combustivel</string>
+    <string name="btnAutonomia">Autonomia</string>
+
 </resources>

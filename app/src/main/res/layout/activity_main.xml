@@ -6,34 +6,17 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-
-    <EditText
-        android:id="@+id/edtAlcool"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Digite aqui o preço do Alcool!"
-        android:inputType="numberDecimal" />
-
-    <EditText
-        android:id="@+id/edtGasolina"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/edtAlcool"
-        android:hint="Digite aqui o preço da Gasolina!"
-        android:inputType="numberDecimal" />
-
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/btnHello"
-        android:layout_below="@id/edtGasolina"
-        android:text="Hello World!" />
+        android:id="@+id/btnCombustivel"
+        android:text="@string/btnCombustivel" />
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/btnAlou"
-        android:layout_below="@id/btnHello"
-        android:text="Hello World!" />
+        android:id="@+id/btnAutonomia"
+        android:layout_below="@id/btnCombustivel"
+        android:text="@string/btnAutonomia" />
 
 
 </RelativeLayout>

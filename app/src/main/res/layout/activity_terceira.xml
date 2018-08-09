@@ -4,28 +4,29 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SegundaActivity">
+    tools:context=".TerceiraActivity">
+
 
     <EditText
-        android:id="@+id/precoAlcool"
+        android:id="@+id/qtdKm"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/edtPrecoAlcool"
+        android:hint="@string/edtQtdKm"
         android:inputType="numberDecimal" />
 
     <EditText
-        android:id="@+id/precoGasolina"
+        android:id="@+id/qtdTanque"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/precoAlcool"
-        android:hint="@string/edtPrecoGasolina"
+        android:layout_below="@id/qtdKm"
+        android:hint="@string/edtQtdCombustivel"
         android:inputType="numberDecimal" />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/btnCalcularPreco"
-        android:layout_below="@id/precoGasolina"
+        android:id="@+id/btnCalcularConsumo"
+        android:layout_below="@id/qtdTanque"
         android:text="@string/btnCalular" />
 
 </RelativeLayout>

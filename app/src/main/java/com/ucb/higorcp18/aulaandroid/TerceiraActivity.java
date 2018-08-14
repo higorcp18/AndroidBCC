@@ -31,7 +31,7 @@ public class TerceiraActivity extends Activity implements View.OnClickListener{
         Double qtdKm = Double.parseDouble(edtQtdKm.getText().toString());
         Double qtdCombustivel = Double.parseDouble(edtQtdCombustivel.getText().toString());
 
-        Toast.makeText(this, "A autonomia do carro é: !"+ qtdKm/qtdCombustivel + " por litro!", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Autonomia do carro é: "+ qtdKm/qtdCombustivel,Toast.LENGTH_SHORT).show();
 
     }
 }

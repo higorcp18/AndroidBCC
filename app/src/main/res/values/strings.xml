@@ -7,5 +7,7 @@
     <string name="edtPrecoAlcool">Digite aqui o preço do Alcool!</string>
     <string name="btnCombustivel">Combustivel</string>
     <string name="btnAutonomia">Autonomia</string>
-
+    <string name="gasolinaMelhor">Gasolina é melhor!</string>
+    <string name="alcoolMelhor">Alcool é melhor!</string>
+    <string name="autonomiaCarro">A autonomia do carro é</string>
 </resources>

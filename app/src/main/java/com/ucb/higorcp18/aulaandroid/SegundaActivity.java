@@ -32,9 +32,9 @@ public class SegundaActivity extends Activity implements View.OnClickListener{
         Double valorGasolinaReais = Double.parseDouble(precoGasolina.getText().toString());
 
         if( valorAlcoolReais / valorGasolinaReais < 0.7)
-            Toast.makeText(this, "Gasolina é melhor!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, R.string.gasolinaMelhor, Toast.LENGTH_SHORT).show();
         else{
-            Toast.makeText(this, "Alcool é melhor!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, R.string.alcoolMelhor, Toast.LENGTH_SHORT).show();
         }
     }
 }

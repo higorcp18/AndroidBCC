@@ -6,26 +6,60 @@
     android:layout_height="match_parent"
     tools:context=".SegundaActivity">
 
-    <EditText
-        android:id="@+id/precoAlcool"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/edtPrecoAlcool"
-        android:inputType="numberDecimal" />
 
-    <EditText
-        android:id="@+id/precoGasolina"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/precoAlcool"
-        android:hint="@string/edtPrecoGasolina"
-        android:inputType="numberDecimal" />
 
-    <Button
+
+    <LinearLayout
+        android:layout_marginTop="80dp"
+        android:orientation="vertical"
+        android:gravity="center"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/btnCalcularPreco"
-        android:layout_below="@id/precoGasolina"
-        android:text="@string/btnCalular" />
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <ImageView
+            android:background="@mipmap/ic_gas_fuel"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+
+            <EditText
+                android:id="@+id/precoAlcool"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/edtPrecoAlcool"
+                android:inputType="numberDecimal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="40dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:background="@mipmap/ic_gas_fuel"
+                android:layout_width="40dp"
+                android:layout_height="40dp" />
+
+            <EditText
+                android:id="@+id/precoGasolina"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/edtPrecoGasolina"
+                android:inputType="numberDecimal" />
+
+        </LinearLayout>
+
+        <Button
+            android:layout_marginTop="70dp"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:id="@+id/btnCalcularPreco"
+            android:text="@string/btnCalular" />
+
+    </LinearLayout>
 
 </RelativeLayout>

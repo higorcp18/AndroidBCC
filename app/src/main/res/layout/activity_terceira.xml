@@ -7,26 +7,56 @@
     tools:context=".TerceiraActivity">
 
 
-    <EditText
-        android:id="@+id/qtdKm"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/edtQtdKm"
-        android:inputType="numberDecimal" />
 
-    <EditText
-        android:id="@+id/qtdTanque"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/qtdKm"
-        android:hint="@string/edtQtdCombustivel"
-        android:inputType="numberDecimal" />
 
-    <Button
+    <LinearLayout
+        android:layout_marginTop="80dp"
+        android:orientation="vertical"
+        android:gravity="center"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/btnCalcularConsumo"
-        android:layout_below="@id/qtdTanque"
-        android:text="@string/btnCalular" />
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
+            <ImageView
+                android:background="@mipmap/ic_route"
+                android:layout_width="40dp"
+                android:layout_height="40dp" />
+            <EditText
+                android:id="@+id/qtdKm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/edtQtdKm"
+                android:inputType="numberDecimal" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="40dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:background="@mipmap/ic_pressure"
+                android:layout_width="40dp"
+                android:layout_height="40dp" />
+
+            <EditText
+                android:id="@+id/qtdTanque"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/edtQtdCombustivel"
+                android:inputType="numberDecimal" />
+
+
+        </LinearLayout>
+        <Button
+            android:layout_marginTop="70dp"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:id="@+id/btnCalcularConsumo"
+            android:layout_below="@id/qtdTanque"
+            android:text="@string/btnCalular" />
+    </LinearLayout>
 </RelativeLayout>

@@ -9,5 +9,5 @@
     <string name="btnAutonomia">Autonomia</string>
     <string name="gasolinaMelhor">Gasolina é melhor!</string>
     <string name="alcoolMelhor">Alcool é melhor!</string>
-    <string name="autonomiaCarro">A autonomia do carro é</string>
+    <string name="autonomiaCarro">A autonomia do carro é: </string>
 </resources>

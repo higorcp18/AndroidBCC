@@ -17,7 +17,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".SegundaActivity" />
-        <activity android:name=".TerceiraActivity"></activity>
+        <activity android:name=".TerceiraActivity" />
+        <activity android:name=".Password" />
+        <activity android:name=".SecondPassword"></activity>
     </application>
 
 </manifest>

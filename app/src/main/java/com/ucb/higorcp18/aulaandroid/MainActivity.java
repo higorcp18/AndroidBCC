@@ -38,6 +38,10 @@ public class MainActivity extends Activity implements View.OnClickListener{
                 intent = new Intent(this, TerceiraActivity.class);
                 startActivity(intent);
                 break;
+            case R.id.btnEmail:
+                intent = new Intent(this,Password.class);
+                startActivity(intent);
+                break;
         }
     }
 }

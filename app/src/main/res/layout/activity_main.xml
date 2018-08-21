@@ -16,8 +16,8 @@
         <Button
             android:layout_marginTop="50dp"
             android:background="@mipmap/ic_gas_pump"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
             android:id="@+id/btnCombustivel"/>
         <TextView
             android:layout_width="wrap_content"
@@ -28,12 +28,23 @@
             android:layout_marginTop="50dp"
             android:background="@mipmap/ic_gas_fuel"
             android:id="@+id/btnAutonomia"
-            android:layout_width="150dp"
-            android:layout_height="150dp" />
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:text="@string/btnCombustivel" />
+
+        <Button
+            android:layout_marginTop="50dp"
+            android:background="@mipmap/ic_pressure"
+            android:id="@+id/btnEmail"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/btnEmail" />
     </LinearLayout>
 
 </RelativeLayout>

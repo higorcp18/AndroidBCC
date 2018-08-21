@@ -11,6 +11,7 @@ import android.widget.Toast;
 public class MainActivity extends Activity implements View.OnClickListener{
     Button btnCombustivel;
     Button btnAutonomia;
+    Button btnEmail;
     Intent intent;
 
     @Override
@@ -20,9 +21,11 @@ public class MainActivity extends Activity implements View.OnClickListener{
 
         btnAutonomia = findViewById(R.id.btnCombustivel);
         btnCombustivel = findViewById(R.id.btnAutonomia);
+        btnEmail = findViewById(R.id.btnEmail);
 
         btnAutonomia.setOnClickListener(this);
         btnCombustivel.setOnClickListener(this);
+        btnEmail.setOnClickListener(this);
 
     }
 

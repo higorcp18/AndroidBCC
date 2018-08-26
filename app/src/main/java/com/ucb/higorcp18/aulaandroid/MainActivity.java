@@ -12,6 +12,7 @@ public class MainActivity extends Activity implements View.OnClickListener{
     Button btnCombustivel;
     Button btnAutonomia;
     Button btnEmail;
+    Button btnChaves;
     Intent intent;
 
     @Override
@@ -22,7 +23,9 @@ public class MainActivity extends Activity implements View.OnClickListener{
         btnAutonomia = findViewById(R.id.btnCombustivel);
         btnCombustivel = findViewById(R.id.btnAutonomia);
         btnEmail = findViewById(R.id.btnEmail);
+        btnChaves = findViewById(R.id.btnChaves);
 
+        btnChaves.setOnClickListener(this);
         btnAutonomia.setOnClickListener(this);
         btnCombustivel.setOnClickListener(this);
         btnEmail.setOnClickListener(this);
@@ -31,7 +34,6 @@ public class MainActivity extends Activity implements View.OnClickListener{
 
     @Override
     public void onClick(View view){
-
         switch (view.getId()) {
             case R.id.btnAutonomia:
                 intent = new Intent(this,SegundaActivity.class);
@@ -45,6 +47,9 @@ public class MainActivity extends Activity implements View.OnClickListener{
                 intent = new Intent(this,Password.class);
                 startActivity(intent);
                 break;
+            case R.id.btnChaves:
+                intent = new Intent(this, ChavesActivity.class);
+                startActivity(intent);
         }
     }
 }

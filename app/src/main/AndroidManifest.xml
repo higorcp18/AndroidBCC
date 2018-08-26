@@ -19,7 +19,8 @@
         <activity android:name=".SegundaActivity" />
         <activity android:name=".TerceiraActivity" />
         <activity android:name=".Password" />
-        <activity android:name=".SecondPassword"></activity>
+        <activity android:name=".SecondPassword" />
+        <activity android:name=".ChavesActivity"></activity>
     </application>
 
 </manifest>

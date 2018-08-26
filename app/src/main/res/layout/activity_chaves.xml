@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChavesActivity">
+
+
+
+    <LinearLayout
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="30dp"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:text="Nome" />
+
+        <EditText
+            android:id="@+id/edtNomeChaves"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="8dp"
+            android:inputType="text" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:text="Idade" />
+
+        <EditText
+            android:id="@+id/edtIdadeChaves"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="8dp"
+            android:inputType="number" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:text="Email" />
+
+        <EditText
+            android:id="@+id/edtEmailChaves"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:inputType="textEmailAddress" />
+
+        <LinearLayout
+            android:layout_marginTop="100dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:id="@+id/btnCompartilhar"
+                android:text="Compartilhar" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

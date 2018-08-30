@@ -31,10 +31,18 @@ public class Password extends Activity implements View.OnClickListener{
         email = findViewById(R.id.edtEmail);
         password = findViewById(R.id.edtPassword);
 
+
+        Usuario usuario = new Usuario();
+
+        usuario.setEmail(email.getText().toString());
+        usuario.setSenha(password.getText().toString());
+
         intent = new Intent(this,SecondPassword.class);
 
-        intent.putExtra("EMAIL", email.getText().toString());
-        intent.putExtra("PASSWORD", password.getText().toString());
+        intent.putExtra("usuario", usuario);
+
+        //intent.putExtra("EMAIL", email.getText().toString());
+        //intent.putExtra("PASSWORD", password.getText().toString());
         startActivity(intent);
     }
 }

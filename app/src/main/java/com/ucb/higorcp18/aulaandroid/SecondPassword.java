@@ -4,10 +4,13 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.widget.TextView;
 
-public class SecondPassword extends Activity {
+import java.io.Serializable;
+
+public class SecondPassword extends Activity implements Serializable{
 
     TextView email;
     TextView password;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,7 +20,12 @@ public class SecondPassword extends Activity {
         email = findViewById(R.id.lblEmail);
         password = findViewById(R.id.lblPassword);
 
-        email.setText(getIntent().getStringExtra("EMAIL"));
-        password.setText(getIntent().getStringExtra("PASSWORD"));
+        Usuario usuario = (Usuario) getIntent().getSerializableExtra("usuario");
+
+        email.setText(usuario.getEmail());
+        password.setText(usuario.getSenha());
+
+        //email.setText(getIntent().getStringExtra("EMAIL"));
+        //password.setText(getIntent().getStringExtra("PASSWORD"));
     }
 }

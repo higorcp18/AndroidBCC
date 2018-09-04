@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">AulaListView</string>
+    <string-array name="arrayCarros">
+        <item>UNO</item>
+        <item>PALIO</item>
+        <item>GOL</item>
+        <item>FUSION</item>
+        <item>FUSCA</item>
+    </string-array>
+</resources>

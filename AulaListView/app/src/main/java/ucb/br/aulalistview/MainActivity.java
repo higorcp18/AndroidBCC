@@ -105,6 +105,7 @@ public class MainActivity extends Activity implements AdapterView.OnItemClickLis
 
         @Override
         public View getView(int i, View view, ViewGroup viewGroup) {
+
             view = getLayoutInflater().inflate(R.layout.listviewcell, null);
 
             ImageView imgVeiculo = view.findViewById(R.id.imageVeiculo);

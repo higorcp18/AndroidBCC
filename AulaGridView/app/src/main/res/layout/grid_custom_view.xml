@@ -20,14 +20,5 @@
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="0dp" />
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Comprar"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="72dp"
-        tools:text="Comprar" />
-
     </LinearLayout>
 </LinearLayout>

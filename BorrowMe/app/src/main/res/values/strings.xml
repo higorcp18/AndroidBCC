@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">BorrowMe</string>
+    <string name="nome_do_produto">Carrinho de mão</string>
+    <string name="textViewData">Dezembro 22</string>
+    <string name="textview_nome_pessoa">Higor Chaves</string>
+    <string name="text_view_tipo_pessoa">Amigo</string>
+    <string name="textview_nome">Nome:</string>
+    <string name="textview_parentesco">Parentesco:</string>
+</resources>
